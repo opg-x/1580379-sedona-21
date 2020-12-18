@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <a class="main-navigation__logo">
+          <img src="" width="102" height="84" alt="Логотип турестического городка Седона">
+        </a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive" target="blank">
+              HTML academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Туристический городок в штате Аризона</h1>
+    <section class="review">
+      <div class="review__wrapper">
+        <h2 class="visually-hidden">
+          Отзыв о турситическом городе Седона
+        </h2>
+        <p class="review__title">
+          Оставьте свой отзыв
+        </p>
+        <p clas="review__text">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
+      </div>
+      <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="review__card personal-information">
+          <legend class="personal-information__heading">Представьтесь:</legend>
+          <div class="personal-information__wrapper">
+            <ul class="personal-information__list">
+              <li class="personal-information__item">
+                <label class="personal-information__title" for="name">имя*:</label>
+                <input class="personal-information__field" id="name" type="text" name="username" placeholder="Петр">
+              </li>
+              <li class="personal-information__item">
+                <label class="personal-information__title" for="seconde-name">фамилия*:</label>
+                <input class="personal-information__field" id="seconde-name" type="text" name="surname"
+                  placeholder="Иванов">
+              </li>
+              <li class="personal-information__item">
+                <label class="personal-information__title" for="middle-name">отчество*:</label>
+                <input class="personal-information__field" id="middle-name" type="text" name="patronymic"
+                  placeholder="Александрович">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="review__card contacts">
+          <legend class="contacts__heading">Контактная информация:</legend>
+          <div class="contacts__wrapper ">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <label class="contacts__title" for="phone">Котактный телефон*:</label>
+                <input class="contacts__field" id="phone" type="tel" name="phone-number" placeholder="Введите телефон">
+              </li>
+              <li class="contacts__item">
+                <label class="contacts__title" for="mail">Введите e-mail*:</label>
+                <input class="contacts__field" id="mail" type="email" name="e-mail" placeholder="Электронная почта">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="review__card impressions">
+          <legend class="impressions__heading">Ваше общее впечатление:</legend>
+          <div class="impression__wrapper">
+            <ul class="impression__list">
+              <li class="impression__item">
+                <input class="imression__radio-button" id="good" type="radio" name="emotion" value="positive"
+                  checked="checked">
+                <label class="impression__title" for="good">Скорее положительное</label>
+              </li>
+              <li class="impression__item">
+                <input class="imression__radio-button" id="bad" type="radio" name="emotion" value="negative">
+                <label class="impression__title" for="bad">Скорее отрицательное</label>
+              </li>
+              <li class="impression__item">
+                <input class="imression__radio-button" id="neutral" type="radio" name="emotion"
+                  value="difficult-to-answer">
+                <label class="impression__title" for="neutral">Скорее отрицательное</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="review__card showplace">
+          <legend class="showplace__heading">Посещенные достопримечательности:</legend>
+          <div class="showplace__wrapper">
+            <ul class="showplace__list">
+              <li class="showplace__item">
+                <input class="showplace__check" id="bridge" type="checkbox" name="sights" value="devils-bridge"
+                  checked="checked">
+                <label class="showplace__title" for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="showplace__item">
+                <input class="showplace__check" id="mountain" type="checkbox" name="sights" value="bell-rock"
+                  checked="checked">
+                <label class="showplace__title" for="mountain">Гора-Колокол</label>
+              </li>
+              <li class="showplace__item">
+                <input class="showplace__check" id="park" type="checkbox" name="sights" value="slide-rock-state-park"
+                  checked="checked">
+                <label class="showplace__title" for="park">Слайд-парк</label>
+              </li>
+              <li>
+                <input class="showplace__check" id="rocks" type="checkbox" name="sights" value="red-rocks">
+                <label class="showplace__title" for="rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="review__card massage">
+          <div class="massage__wrapper">
+            <legend class="massage__heading">Опишите свои эмоции:</legend>
+            <input class="massage__field" type="textarea" name="comment"
+              placeholder="Опишите подробно все свои восторги">
+          </div>
+        </fieldset>
+        <button class="review__button" type="submit">Отправить отзыв</button>
+        <p>* - обязательные поля</p>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h3 class="contacts__hashtag">#visitsedona</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="visually-hidden">Твиттер</h3>
+          </li>
+          <li class="contacts__item">
+            <h3 class="visually-hidden">Фейсбук</h3>
+          </li>
+          <li class="contacts__item">
+            <h3 class="visually-hidden">Ютьюб</h3>
+          </li>
+        </ul>
+        <div class="contacts__developer">Разработано</div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
